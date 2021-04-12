@@ -1,0 +1,21 @@
+{
+  "welcomeFile": "uimodule/index.html",
+  "authenticationMethod": "none",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/uimodule/(.*)$",
+      "target": "$1",
+      "authenticationType": "none",
+      "localDir": "uimodule/webapp"
+    },
+    {
+      "source": "^/V2/(.*)$",
+      "authenticationType": "none",
+      "destination": "northwind",
+      "csrfProtection": false
+    }
+  ]
+}
