@@ -1,0 +1,84 @@
+ <mvc:View controllerName="com.everis.myApp.controller.MainView"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <App id="idAppControl" >
+    <pages>
+      <Page title="{i18n>title}">
+        <content>
+
+          <Table id="idOrdersTable"
+            inset="false"
+            items="{NorthWindData>/value}">
+            <columns>
+              <Column>
+                <Text text="OrderID" />
+              </Column>
+              <Column>
+                <Text text="CustomerID" />
+              </Column>
+              <Column>
+                <Text text="EmployeeID" />
+              </Column>
+              <Column>
+                <Text text="OrderDate" />
+              </Column>
+              <Column>
+                <Text text="RequiredDate" />
+              </Column>
+              <Column>
+                <Text text="ShippedDate" />
+              </Column>
+              <Column>
+                <Text text="ShipVia" />
+              </Column>
+              <Column>
+                <Text text="Freight" />
+              </Column>
+              <Column>
+                <Text text="ShipName" />
+              </Column>
+              <Column>
+                <Text text="ShipAddress" />
+              </Column>
+              <Column>
+                <Text text="ShipCity" />
+              </Column>
+              <Column>
+                <Text text="ShipRegion" />
+              </Column>
+              <Column>
+                <Text text="ShipPostalCode" />
+              </Column>
+              <Column>
+                <Text text="ShipCountry" />
+              </Column>
+            </columns>
+            <items>
+              <ColumnListItem>
+                <cells>
+                  <Text text="{NorthWindData>OrderID}"/>
+                  <Text text="{NorthWindData>CustomerID}"/>
+                  <Text text="{NorthWindData>EmployeeID}"/>
+                  <Text text="{NorthWindData>OrderDate}"/>
+                  <Text text="{NorthWindData>RequiredDate}"/>
+                  <Text text="{NorthWindData>ShippedDate}"/>
+                  <Text text="{NorthWindData>ShipVia}"/>
+                  <Text text="{NorthWindData>Freight}"/>
+                  <Text text="{NorthWindData>ShipName}"/>
+                  <Text text="{NorthWindData>ShipAddress}"/>
+                  <Text text="{NorthWindData>ShipCity}"/>
+                  <Text text="{NorthWindData>ShipRegion}"/>
+                  <Text text="{NorthWindData>ShipPostalCode}"/>
+                  <Text text="{NorthWindData>ShipCountry}"/>
+                </cells>
+              </ColumnListItem>
+            </items>
+          </Table>
+
+
+        </content>
+      </Page>
+    </pages>
+  </App>
+</mvc:View>
